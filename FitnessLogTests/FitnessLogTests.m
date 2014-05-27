@@ -2,8 +2,8 @@
 //  FitnessLogTests.m
 //  FitnessLogTests
 //
-//  Created by Smriti Pramanick on 2/25/14.
-//  Copyright (c) 2014 Smriti Pramanick. All rights reserved.
+//  Created by spramanick on 2/25/14.
+//  Copyright (c) 2014 spramanick. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

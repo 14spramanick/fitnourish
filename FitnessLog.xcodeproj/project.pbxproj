@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F241A37B18F2FBF300D90658 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = F241A37A18F2FBF300D90658 /* home.png */; };
+		F253B3E318D372B600176DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AB6A9018BD40000069A009 /* Main.storyboard */; };
+		F253B3E418D372C400176DEB /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6A8E18BD40000069A009 /* FLAppDelegate.m */; };
+		F253B3E518D372C900176DEB /* FLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6AB718CA4A750069A009 /* FLViewController.m */; };
+		F253B3E618D372CE00176DEB /* FLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6A9418BD40000069A009 /* FLFirstViewController.m */; };
+		F253B3E718D372D200176DEB /* FLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6A9718BD40000069A009 /* FLSecondViewController.m */; };
+		F253B42B18D96B0700176DEB /* FLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F253B42A18D96B0700176DEB /* FLThirdViewController.m */; };
+		F253B42E18D9FB1000176DEB /* FLFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F253B42D18D9FB1000176DEB /* FLFourthViewController.m */; };
+		F253B43218D9FF5F00176DEB /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = F253B43118D9FF5F00176DEB /* images.png */; };
 		F2AB6A7F18BD3FFF0069A009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB6A7E18BD3FFF0069A009 /* Foundation.framework */; };
 		F2AB6A8118BD3FFF0069A009 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB6A8018BD3FFF0069A009 /* CoreGraphics.framework */; };
 		F2AB6A8318BD3FFF0069A009 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB6A8218BD3FFF0069A009 /* UIKit.framework */; };
 		F2AB6A8918BD40000069A009 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2AB6A8718BD40000069A009 /* InfoPlist.strings */; };
 		F2AB6A8B18BD40000069A009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6A8A18BD40000069A009 /* main.m */; };
-		F2AB6A8F18BD40000069A009 /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6A8E18BD40000069A009 /* FLAppDelegate.m */; };
-		F2AB6A9218BD40000069A009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2AB6A9018BD40000069A009 /* Main.storyboard */; };
-		F2AB6A9518BD40000069A009 /* FLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6A9418BD40000069A009 /* FLFirstViewController.m */; };
-		F2AB6A9818BD40000069A009 /* FLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6A9718BD40000069A009 /* FLSecondViewController.m */; };
 		F2AB6A9A18BD40000069A009 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AB6A9918BD40000069A009 /* Images.xcassets */; };
 		F2AB6AA118BD40000069A009 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB6AA018BD40000069A009 /* XCTest.framework */; };
 		F2AB6AA218BD40000069A009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB6A7E18BD3FFF0069A009 /* Foundation.framework */; };
 		F2AB6AA318BD40000069A009 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AB6A8218BD3FFF0069A009 /* UIKit.framework */; };
 		F2AB6AAB18BD40000069A009 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2AB6AA918BD40000069A009 /* InfoPlist.strings */; };
 		F2AB6AAD18BD40000069A009 /* FitnessLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AB6AAC18BD40000069A009 /* FitnessLogTests.m */; };
+		F2D952631929EFB900C2E275 /* 256px-Email_Shiny_Icon.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D952621929EFB900C2E275 /* 256px-Email_Shiny_Icon.svg.png */; };
+		F2D952651929EFC100C2E275 /* 480px-Facebook_icon_2013.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D952641929EFC100C2E275 /* 480px-Facebook_icon_2013.svg.png */; };
+		F2D952671929EFCA00C2E275 /* google-drive-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D952661929EFCA00C2E275 /* google-drive-logo.png */; };
+		F2D952691929EFD100C2E275 /* imessage_icon__from_ios__by_flakshack-d5l65oe.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D952681929EFD100C2E275 /* imessage_icon__from_ios__by_flakshack-d5l65oe.png */; };
+		F2D9526B1929EFDA00C2E275 /* mzl.zconhyjp.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D9526A1929EFDA00C2E275 /* mzl.zconhyjp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F241A37A18F2FBF300D90658 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		F253B42918D96B0700176DEB /* FLThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLThirdViewController.h; sourceTree = "<group>"; };
+		F253B42A18D96B0700176DEB /* FLThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLThirdViewController.m; sourceTree = "<group>"; };
+		F253B42C18D9FB1000176DEB /* FLFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLFourthViewController.h; sourceTree = "<group>"; };
+		F253B42D18D9FB1000176DEB /* FLFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLFourthViewController.m; sourceTree = "<group>"; };
+		F253B43118D9FF5F00176DEB /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		F2AB6A7B18BD3FFF0069A009 /* FitnessLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AB6A7E18BD3FFF0069A009 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2AB6A8018BD3FFF0069A009 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +72,13 @@
 		F2AB6AA818BD40000069A009 /* FitnessLogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FitnessLogTests-Info.plist"; sourceTree = "<group>"; };
 		F2AB6AAA18BD40000069A009 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F2AB6AAC18BD40000069A009 /* FitnessLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitnessLogTests.m; sourceTree = "<group>"; };
+		F2AB6AB618CA4A750069A009 /* FLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLViewController.h; sourceTree = "<group>"; };
+		F2AB6AB718CA4A750069A009 /* FLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLViewController.m; sourceTree = "<group>"; };
+		F2D952621929EFB900C2E275 /* 256px-Email_Shiny_Icon.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "256px-Email_Shiny_Icon.svg.png"; sourceTree = "<group>"; };
+		F2D952641929EFC100C2E275 /* 480px-Facebook_icon_2013.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480px-Facebook_icon_2013.svg.png"; sourceTree = "<group>"; };
+		F2D952661929EFCA00C2E275 /* google-drive-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-drive-logo.png"; sourceTree = "<group>"; };
+		F2D952681929EFD100C2E275 /* imessage_icon__from_ios__by_flakshack-d5l65oe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imessage_icon__from_ios__by_flakshack-d5l65oe.png"; sourceTree = "<group>"; };
+		F2D9526A1929EFDA00C2E275 /* mzl.zconhyjp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mzl.zconhyjp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +141,24 @@
 				F2AB6A8D18BD40000069A009 /* FLAppDelegate.h */,
 				F2AB6A8E18BD40000069A009 /* FLAppDelegate.m */,
 				F2AB6A9018BD40000069A009 /* Main.storyboard */,
+				F2AB6AB618CA4A750069A009 /* FLViewController.h */,
+				F2AB6AB718CA4A750069A009 /* FLViewController.m */,
 				F2AB6A9318BD40000069A009 /* FLFirstViewController.h */,
 				F2AB6A9418BD40000069A009 /* FLFirstViewController.m */,
 				F2AB6A9618BD40000069A009 /* FLSecondViewController.h */,
 				F2AB6A9718BD40000069A009 /* FLSecondViewController.m */,
+				F253B42918D96B0700176DEB /* FLThirdViewController.h */,
+				F253B42A18D96B0700176DEB /* FLThirdViewController.m */,
+				F253B42C18D9FB1000176DEB /* FLFourthViewController.h */,
+				F253B42D18D9FB1000176DEB /* FLFourthViewController.m */,
 				F2AB6A9918BD40000069A009 /* Images.xcassets */,
+				F253B43118D9FF5F00176DEB /* images.png */,
+				F241A37A18F2FBF300D90658 /* home.png */,
+				F2D952621929EFB900C2E275 /* 256px-Email_Shiny_Icon.svg.png */,
+				F2D952641929EFC100C2E275 /* 480px-Facebook_icon_2013.svg.png */,
+				F2D952661929EFCA00C2E275 /* google-drive-logo.png */,
+				F2D952681929EFD100C2E275 /* imessage_icon__from_ios__by_flakshack-d5l65oe.png */,
+				F2D9526A1929EFDA00C2E275 /* mzl.zconhyjp.png */,
 				F2AB6A8518BD40000069A009 /* Supporting Files */,
 			);
 			path = FitnessLog;
@@ -234,9 +270,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F253B3E318D372B600176DEB /* Main.storyboard in Resources */,
+				F2D9526B1929EFDA00C2E275 /* mzl.zconhyjp.png in Resources */,
+				F2D952651929EFC100C2E275 /* 480px-Facebook_icon_2013.svg.png in Resources */,
+				F2D952691929EFD100C2E275 /* imessage_icon__from_ios__by_flakshack-d5l65oe.png in Resources */,
+				F2D952671929EFCA00C2E275 /* google-drive-logo.png in Resources */,
+				F241A37B18F2FBF300D90658 /* home.png in Resources */,
 				F2AB6A9A18BD40000069A009 /* Images.xcassets in Resources */,
+				F2D952631929EFB900C2E275 /* 256px-Email_Shiny_Icon.svg.png in Resources */,
 				F2AB6A8918BD40000069A009 /* InfoPlist.strings in Resources */,
-				F2AB6A9218BD40000069A009 /* Main.storyboard in Resources */,
+				F253B43218D9FF5F00176DEB /* images.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2AB6A9818BD40000069A009 /* FLSecondViewController.m in Sources */,
-				F2AB6A8F18BD40000069A009 /* FLAppDelegate.m in Sources */,
+				F253B42B18D96B0700176DEB /* FLThirdViewController.m in Sources */,
+				F253B3E418D372C400176DEB /* FLAppDelegate.m in Sources */,
+				F253B3E718D372D200176DEB /* FLSecondViewController.m in Sources */,
+				F253B42E18D9FB1000176DEB /* FLFourthViewController.m in Sources */,
 				F2AB6A8B18BD40000069A009 /* main.m in Sources */,
-				F2AB6A9518BD40000069A009 /* FLFirstViewController.m in Sources */,
+				F253B3E518D372C900176DEB /* FLViewController.m in Sources */,
+				F253B3E618D372CE00176DEB /* FLFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +358,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -351,7 +396,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -409,7 +453,6 @@
 		F2AB6AB418BD40000069A009 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FitnessLog.app/FitnessLog";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -432,7 +475,6 @@
 		F2AB6AB518BD40000069A009 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FitnessLog.app/FitnessLog";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -467,6 +509,7 @@
 				F2AB6AB218BD40000069A009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2AB6AB318BD40000069A009 /* Build configuration list for PBXNativeTarget "FitnessLogTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +518,7 @@
 				F2AB6AB518BD40000069A009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
