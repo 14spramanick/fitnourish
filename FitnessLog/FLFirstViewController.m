@@ -79,10 +79,10 @@
     //[fitNourishGlobals setObject:smritiDistance[sliderValue] forKey:@"distanceTraveledText"];
     //[fitNourishGlobals setObject:smritiHeart[sliderValue] forKey:@"heartRateText"];
         
-        self.workoutTimeText.text = [NSString stringWithFormat:@""];
-        self.distanceTraveledText.text = [NSString stringWithFormat:@""];
-        self.caloriesBurnedText.text = [NSString stringWithFormat:@""];
-        self.heartRateText.text = [NSString stringWithFormat:@""];
+    self.workoutTimeText.text = [NSString stringWithFormat:@""];
+    self.distanceTraveledText.text = [NSString stringWithFormat:@""];
+    self.caloriesBurnedText.text = [NSString stringWithFormat:@""];
+    self.heartRateText.text = [NSString stringWithFormat:@""];
     
 }
 

@@ -9,12 +9,13 @@
 #import "FLThirdViewController.h"
 
 @interface FLThirdViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *dayR;
+@property (weak, nonatomic) IBOutlet UILabel *day;
 @property (weak, nonatomic) IBOutlet UITextField *wtText;
 @property (weak, nonatomic) IBOutlet UITextField *cbText;
 @property (weak, nonatomic) IBOutlet UITextField *dtText;
 @property (weak, nonatomic) IBOutlet UITextField *hrText;
 @property (weak, nonatomic) IBOutlet UIButton *saveResults;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -38,27 +39,36 @@
 
 - (IBAction)saveResultsClicked:(id)sender
 {
-    NSMutableArray *smriti = [NSMutableArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", @"6", @"7", nil];
-    if ([self.dayR.text isEqualToString:(@"Day 1")]) {
-        //self.workoutTime1 = self.workoutTimeText.text;
-        //self.caloriesBurned1 = self.caloriesBurnedText.text;
-        //self.distanceTraveled1 = self.distanceTraveledText.text;
-        //self.heartRate1 = self.heartRateText.text;
-        
-        smriti[0] = self.wtText.text;
-        
-        NSUserDefaults *fitNourishGlobals = [NSUserDefaults standardUserDefaults];
-        [fitNourishGlobals setObject:smriti[0] forKey:@"wtText"];
-        [fitNourishGlobals setObject:self.cbText.text forKey:@"cbText"];
-        [fitNourishGlobals setObject:self.dtText.text forKey:@"dtText"];
-        [fitNourishGlobals setObject:self.hrText.text forKey:@"hrText"];
-        NSLog(@"this is the array: %@",self.wtText.text);
-        
-        self.wtText.text = [NSString stringWithFormat:@""];
-        self.dtText.text = [NSString stringWithFormat:@""];
-        self.cbText.text = [NSString stringWithFormat:@""];
-        self.hrText.text = [NSString stringWithFormat:@""];
-    }
+    NSMutableArray *smritiTimeR = [NSMutableArray arrayWithObjects:@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", nil];
+    
+    NSMutableArray *smritiCaloriesR = [NSMutableArray arrayWithObjects:@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", nil];
+    
+    NSMutableArray *smritiDistanceR = [NSMutableArray arrayWithObjects:@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", nil];
+    
+    NSMutableArray *smritiHeartR = [NSMutableArray arrayWithObjects:@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", nil];
+    
+    int sliderValue = roundf(_slider.value);
+    
+    smritiTimeR[sliderValue] = self.wtText.text;
+    smritiCaloriesR[sliderValue] = self.cbText.text;
+    smritiDistanceR[sliderValue] = self.dtText.text;
+    smritiHeartR[sliderValue] = self.hrText.text;
+    
+    NSString *keyValueWTr = [NSString stringWithFormat: @"wtText%ld", (unsigned long)sliderValue];
+    NSString *keyValueCBr = [NSString stringWithFormat: @"cbText%ld", (unsigned long)sliderValue];
+    NSString *keyValueDTr = [NSString stringWithFormat: @"dtText%ld", (unsigned long)sliderValue];
+    NSString *keyValueHRr = [NSString stringWithFormat: @"hrText%ld", (unsigned long)sliderValue];
+    
+    NSUserDefaults *fitNourishGlobals = [NSUserDefaults standardUserDefaults];
+    [fitNourishGlobals setObject:smritiTimeR[sliderValue] forKey:keyValueWTr];
+    [fitNourishGlobals setObject:smritiCaloriesR[sliderValue] forKey:keyValueCBr];
+    [fitNourishGlobals setObject:smritiDistanceR[sliderValue] forKey:keyValueDTr];
+    [fitNourishGlobals setObject:smritiHeartR[sliderValue] forKey:keyValueHRr];
+    
+    self.wtText.text = [NSString stringWithFormat:@""];
+    self.dtText.text = [NSString stringWithFormat:@""];
+    self.cbText.text = [NSString stringWithFormat:@""];
+    self.hrText.text = [NSString stringWithFormat:@""];
     
 }
 
@@ -83,5 +93,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)sliderMoved:(UISlider *)slider
+{
+    int sliderValue = roundf(slider.value);
+    //NSLog(@"The value of the slider is now: %d", sliderValue);
+    self.day.text = [NSString stringWithFormat:@"Day %d", sliderValue];
+}
+
 
 @end

@@ -20,9 +20,7 @@
                                 <rect key="frame" x="0.0" y="19" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Select a day and enter goals." prompt="Welcome to Fit Nourish!" id="2Ee-Tc-8cs">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="0Ih-fa-2KY"/>
-                                    </navigationItem>
+                                    <navigationItem title="Select a day and enter goals." prompt="Welcome to Fit Nourish!" id="2Ee-Tc-8cs"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workout Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHp-A0-ZBL">
@@ -198,13 +196,7 @@
                                 <rect key="frame" x="0.0" y="19" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Select a day and see the results." prompt="Welcome to Fit Nourish!" id="5CB-n9-PuX">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="uxQ-ax-so2">
-                                            <connections>
-                                                <segue destination="O3o-ig-amx" kind="modal" id="16G-jm-uod"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Select a day and see the results." prompt="Welcome to Fit Nourish!" id="5CB-n9-PuX"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workout Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNq-6d-2ap">
@@ -224,6 +216,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="Mfu-2E-6qV">
                                 <rect key="frame" x="78" y="108" width="205" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="Mzf-V3-gv6" eventType="valueChanged" id="XbR-sY-QKd"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1    2    3    4    5    6    7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1y-py-qOI">
                                 <rect key="frame" x="90" y="144" width="183" height="21"/>
@@ -350,13 +345,14 @@
                     <navigationItem key="navigationItem" id="9O8-0g-x4M"/>
                     <connections>
                         <outlet property="cbResult" destination="DVl-O0-YnF" id="82G-WD-dzo"/>
-                        <outlet property="dayR" destination="Eq5-MN-OqB" id="OS2-8a-qgp"/>
+                        <outlet property="day" destination="Eq5-MN-OqB" id="X3K-DB-saC"/>
                         <outlet property="dtResult" destination="PTP-ul-yaj" id="JwS-YE-yoN"/>
                         <outlet property="hrResult" destination="brl-BT-K3i" id="2oo-7B-V2k"/>
                         <outlet property="responseCB" destination="Ydx-ls-0xo" id="wGl-ej-rPS"/>
                         <outlet property="responseDT" destination="XOg-tx-JQx" id="fs7-Ax-bOX"/>
                         <outlet property="responseHR" destination="Q48-1N-xOb" id="8fH-uf-Jq1"/>
                         <outlet property="responseWT" destination="Lve-SY-Jkv" id="X7w-UE-mCu"/>
+                        <outlet property="slider" destination="Mfu-2E-6qV" id="rbQ-SX-rff"/>
                         <outlet property="viewResultsTab" destination="0a5-07-vpR" id="c1g-Zf-VXt"/>
                         <outlet property="wtResult" destination="4JG-Vu-6cs" id="j1D-VB-CQj"/>
                     </connections>
@@ -381,9 +377,7 @@
                                 <rect key="frame" x="0.0" y="19" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Select a day and enter results." prompt="Welcome to Fit Nourish!" id="2gF-HN-mRM">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Nm7-BV-u88"/>
-                                    </navigationItem>
+                                    <navigationItem title="Select a day and enter results." prompt="Welcome to Fit Nourish!" id="2gF-HN-mRM"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okF-vK-Jmf">
@@ -396,6 +390,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="hbK-MC-mNj">
                                 <rect key="frame" x="78" y="108" width="205" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="QHp-00-Lwy" eventType="valueChanged" id="iHY-mt-xYl"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1    2    3    4    5    6    7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwf-p0-qrT">
                                 <rect key="frame" x="90" y="143" width="183" height="21"/>
@@ -521,10 +518,11 @@
                     <navigationItem key="navigationItem" id="Dtc-bI-kiU"/>
                     <connections>
                         <outlet property="cbText" destination="7tw-yB-WZ8" id="JK8-Pj-F1p"/>
-                        <outlet property="dayR" destination="okF-vK-Jmf" id="iVd-vl-dcj"/>
+                        <outlet property="day" destination="okF-vK-Jmf" id="WeO-FB-9Cw"/>
                         <outlet property="dtText" destination="xDL-b3-YgL" id="wPM-8O-bbf"/>
                         <outlet property="hrText" destination="3Tn-wh-DXj" id="bMw-q3-LEv"/>
                         <outlet property="saveResults" destination="gt8-to-9AX" id="hjR-Lu-oKO"/>
+                        <outlet property="slider" destination="hbK-MC-mNj" id="OaW-Pn-HzV"/>
                         <outlet property="wtText" destination="fq5-7S-QEs" id="5yx-9l-Ut5"/>
                     </connections>
                 </viewController>
@@ -548,14 +546,15 @@
                                 <rect key="frame" x="0.0" y="19" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Select a day and see the goals." prompt="Welcome to Fit Nourish!" id="nKz-H9-gSm">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="ifs-04-tDR"/>
-                                    </navigationItem>
+                                    <navigationItem title="Select a day and see the goals." prompt="Welcome to Fit Nourish!" id="nKz-H9-gSm"/>
                                 </items>
                             </navigationBar>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="TD0-Ml-S2j">
                                 <rect key="frame" x="78" y="108" width="205" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="QUy-BD-bpt" eventType="valueChanged" id="XhZ-Cf-JOV"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EG7-G7-QWd">
                                 <rect key="frame" x="20" y="114" width="67" height="21"/>
@@ -694,15 +693,13 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="Welcome to Fit Nourish!" prompt="&quot;I, I, I work outtt&quot;" id="OZY-xF-AeK">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="2Wo-yT-9kz"/>
-                                    </navigationItem>
+                                    <navigationItem title="Welcome to Fit Nourish!" prompt="&quot;I, I, I work outtt&quot;" id="OZY-xF-AeK"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="onR-a8-fAI">
                                 <rect key="frame" x="20" y="296" width="280" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">This app keeps track of your fitness goals and results. Use the tabs at the bottom to: enter goals, view goals, enter results, and view results for a particular day (for up to 7 days). You may also share (email, message, etc.) your results by clicking on the top right "upload" button.</string>
+                                <string key="text">This app keeps track of your fitness goals and results. Use the tabs at the bottom to: enter goals, view goals, enter results, and view results for a particular day (for up to 7 days).</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -765,11 +762,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Share Your Fit Nourish!" id="qlb-Sb-cwC">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="wbA-qh-OVD">
-                                            <connections>
-                                                <segue destination="Mzf-V3-gv6" kind="modal" id="mJP-Ku-m8s"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="wbA-qh-OVD"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -839,7 +832,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2M-jR-Uk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="1200"/>
+            <point key="canvasLocation" x="755" y="1244"/>
         </scene>
     </scenes>
     <resources>
@@ -857,7 +850,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="mJP-Ku-m8s"/>
-    </inferredMetricsTieBreakers>
 </document>

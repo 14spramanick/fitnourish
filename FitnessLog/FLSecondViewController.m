@@ -47,11 +47,19 @@
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     // You code here to update the view.
+    
+    int sliderValue = roundf(_slider.value);
+    
+    NSString *keyValueWT = [NSString stringWithFormat: @"workoutTimeText%ld", (unsigned long)sliderValue];
+    NSString *keyValueCB = [NSString stringWithFormat: @"caloriesBurnedText%ld", (unsigned long)sliderValue];
+    NSString *keyValueDT = [NSString stringWithFormat: @"distanceTraveledText%ld", (unsigned long)sliderValue];
+    NSString *keyValueHR = [NSString stringWithFormat: @"heartRateText%ld", (unsigned long)sliderValue];
+    
     NSUserDefaults *fitNourishGlobals = [NSUserDefaults standardUserDefaults];
-    self.workoutTimeGoal.text = [fitNourishGlobals stringForKey:@"workoutTimeText"];
-    self.caloriesBurnedGoal.text = [fitNourishGlobals stringForKey:@"caloriesBurnedText"];
-    self.distanceTraveledGoal.text = [fitNourishGlobals stringForKey:@"distanceTraveledText"];
-    self.heartRateGoal.text = [fitNourishGlobals stringForKey:@"heartRateText"];
+    self.workoutTimeGoal.text = [fitNourishGlobals stringForKey:keyValueWT];
+    self.caloriesBurnedGoal.text = [fitNourishGlobals stringForKey:keyValueCB];
+    self.distanceTraveledGoal.text = [fitNourishGlobals stringForKey:keyValueDT];
+    self.heartRateGoal.text = [fitNourishGlobals stringForKey:keyValueHR];
 }
 
 - (void)didReceiveMemoryWarning
