@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *distanceTraveledGoal;
 @property (weak, nonatomic) IBOutlet UILabel *heartRateGoal;
 @property (weak, nonatomic) IBOutlet UITabBarItem *viewGoalsTab;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -58,5 +59,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)sliderMoved:(UISlider *)slider
+{
+    int sliderValue = roundf(slider.value);
+    //NSLog(@"The value of the slider is now: %d", sliderValue);
+    self.day.text = [NSString stringWithFormat:@"Day %d", sliderValue];
+}
+
 
 @end

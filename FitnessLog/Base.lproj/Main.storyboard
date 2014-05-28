@@ -668,6 +668,7 @@
                         <outlet property="day" destination="EG7-G7-QWd" id="aXl-Ax-iY3"/>
                         <outlet property="distanceTraveledGoal" destination="gIT-Hx-B9H" id="tkG-gv-XPz"/>
                         <outlet property="heartRateGoal" destination="T2R-Su-cwH" id="Cms-wq-W8s"/>
+                        <outlet property="slider" destination="TD0-Ml-S2j" id="s6j-Ng-FsG"/>
                         <outlet property="viewGoalsTab" destination="Z7h-1E-pvt" id="b1H-V5-HC7"/>
                         <outlet property="workoutTimeGoal" destination="k4D-r4-pg2" id="GHQ-iK-s1p"/>
                     </connections>

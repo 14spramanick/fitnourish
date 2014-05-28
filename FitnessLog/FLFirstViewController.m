@@ -64,7 +64,7 @@
     smritiDistance[sliderValue] = self.distanceTraveledText.text;
     smritiHeart[sliderValue] = self.heartRateText.text;
     
-   // NSString *keyValue = [@"workoutTimeText%d", sliderValue];
+    //NSString *keyValue = [@"workoutTimeText%ld", (unsigned long)sliderValue];
     
     NSUserDefaults *fitNourishGlobals = [NSUserDefaults standardUserDefaults];
     //[fitNourishGlobals setObject:smritiTime[sliderValue] forKey:keyValue];
