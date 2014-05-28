@@ -64,14 +64,20 @@
     smritiDistance[sliderValue] = self.distanceTraveledText.text;
     smritiHeart[sliderValue] = self.heartRateText.text;
     
-    //NSString *keyValue = [@"workoutTimeText%ld", (unsigned long)sliderValue];
+    NSString *keyValueWT = [NSString stringWithFormat: @"workoutTimeText%ld", (unsigned long)sliderValue];
+    NSString *keyValueCB = [NSString stringWithFormat: @"caloriesBurnedText%ld", (unsigned long)sliderValue];
+    NSString *keyValueDT = [NSString stringWithFormat: @"distanceTraveledText%ld", (unsigned long)sliderValue];
+    NSString *keyValueHR = [NSString stringWithFormat: @"heartRateText%ld", (unsigned long)sliderValue];
     
     NSUserDefaults *fitNourishGlobals = [NSUserDefaults standardUserDefaults];
-    //[fitNourishGlobals setObject:smritiTime[sliderValue] forKey:keyValue];
-    [fitNourishGlobals setObject:smritiTime[sliderValue] forKey:@"workoutTimeText"];
-    [fitNourishGlobals setObject:smritiCalories[sliderValue] forKey:@"caloriesBurnedText"];
-    [fitNourishGlobals setObject:smritiDistance[sliderValue] forKey:@"distanceTraveledText"];
-    [fitNourishGlobals setObject:smritiHeart[sliderValue] forKey:@"heartRateText"];
+    [fitNourishGlobals setObject:smritiTime[sliderValue] forKey:keyValueWT];
+    [fitNourishGlobals setObject:smritiCalories[sliderValue] forKey:keyValueCB];
+    [fitNourishGlobals setObject:smritiDistance[sliderValue] forKey:keyValueDT];
+    [fitNourishGlobals setObject:smritiHeart[sliderValue] forKey:keyValueHR];
+    //[fitNourishGlobals setObject:smritiTime[sliderValue] forKey:@"workoutTimeText"];
+    //[fitNourishGlobals setObject:smritiCalories[sliderValue] forKey:@"caloriesBurnedText"];
+    //[fitNourishGlobals setObject:smritiDistance[sliderValue] forKey:@"distanceTraveledText"];
+    //[fitNourishGlobals setObject:smritiHeart[sliderValue] forKey:@"heartRateText"];
         
         self.workoutTimeText.text = [NSString stringWithFormat:@""];
         self.distanceTraveledText.text = [NSString stringWithFormat:@""];
